@@ -39,24 +39,24 @@ interface LinkItemProps {
 
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Home', icon: FiHome, route: '/' },
-  { name: 'Blocks', icon: FiBox, route: '/blocks' },
-  { name: 'Transactions', icon: FiGlobe, route: '/txs' },
-  { name: 'Validators', icon: FiCompass, route: '/validators' },
-  { name: 'Proposals', icon: FiStar, route: '/proposals' },
-  { name: 'Parameters', icon: FiSliders, route: '/parameters' },
+  { name: 'Block', icon: FiBox, route: '/blocks' },
+  { name: 'Trans', icon: FiGlobe, route: '/txs' },
+  { name: 'Val', icon: FiCompass, route: '/validators' },
+  { name: 'Props', icon: FiStar, route: '/proposals' },
+  { name: 'Param', icon: FiSliders, route: '/parameters' },
 ]
 
 const RefLinkItems: Array<LinkItemProps> = [
   {
     name: 'Github',
     icon: FiGithub,
-    route: 'https://github.com/pvsairam/nexplorer',
+    route: 'https://github.com/rockasterjames/nex',
     isBlank: true,
   },
   {
     name: 'Report Issues',
     icon: FiAlertCircle,
-    route: 'https://github.com/pvsairam/nexplorer/issues',
+    route: 'https://github.com/rockasterjames/nex/issues',
     isBlank: true,
   },
 ]
@@ -98,8 +98,8 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   // Dynamically select the appropriate logo URL based on the color mode
   const logoUrl = useColorModeValue(
-    'https://raw.githubusercontent.com/pvsairam/nexplorer/main/nLogo/NAMADA%20COMBINED/SVG/Namada_COMB_RGB_Black.svg',
-    'https://raw.githubusercontent.com/pvsairam/nexplorer/main/nLogo/NAMADA%20COMBINED/SVG/Namada_COMB_RGB_YELLOW.svg'
+    'https://raw.githubusercontent.com/rockasterjames/nex/main/nLogo/NAMADA%20COMBINED/SVG/Namada_COMB_RGB_Black.svg',
+    'https://raw.githubusercontent.com/rockasterjames/nex/main/nLogo/NAMADA%20COMBINED/SVG/Namada_COMB_RGB_YELLOW.svg'
   )
 
   return (
